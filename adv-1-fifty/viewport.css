@@ -1,0 +1,17 @@
+/* op mobiel is in viewport heel lastig! */
+@media (min-width: 650px) {
+
+    .shape,
+    .lineup li,
+    .date {
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    .in-viewport .shape,
+    .in-viewport .lineup li,
+    .in-viewport .date {
+        opacity: 1;
+    }
+
+}

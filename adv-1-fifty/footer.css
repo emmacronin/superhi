@@ -1,0 +1,124 @@
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* .section-pad {
+    display: flex;
+} */
+
+.register {
+    background-color: #FFEED1;
+    min-height: 65vh;
+    display: flex;
+}
+
+.footer {
+    background-color: #111118;
+    min-height: 30vh;
+    text-align: center;
+    display: flex;
+}
+
+.footer img {
+    max-width: 40px;
+    margin-bottom: 24px;
+}
+
+.section.flex-column {
+    background-color: #111118;
+}
+
+.button {
+    border: solid 2px #FFEED1;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #FFEED1;
+    border-radius: 4px;
+    line-height: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+.register .container {
+    display: flex;
+}
+
+.register h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sign-up {
+    background: none;
+    border: none;
+    display: flex;
+    border-bottom: solid 3px #00B290;
+    padding-bottom: 20px;
+    /* align-content: stretch; */
+}
+
+.input,
+.submit,
+.email-input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.submit {
+    font-size: 1.6rem;
+}
+
+.email-input {
+    flex: 1;
+    font-size: 1.6rem;
+    color: #00B290;
+}
+
+.eyes {
+    background-image: url(img/eyes_open.svg);
+    width: 100px;
+    height: 32px;
+    /* margin-right: 5px;
+    margin-bottom: 25px; */
+}
+
+.hand {
+    background-image: url(img/ok_hand.svg);
+    width: 50px;
+    height: 85px;
+    align-self: flex-end;
+}
+
+.eyes,
+.hand {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form {
+    margin: 30px 38px 48px 5px;
+    /* max-width: 1080px; */
+}
+
+@media (max-width: 780px) {
+
+    .register .container {
+        /*  boxes niet naast elkaar maar BOVENOP elkaar */
+        flex-direction: column;
+        /* margin-top: 50px; */
+        overflow: hidden;
+    }
+
+    .form {
+        margin: 10px 38px 48px 25px;
+    }
+
+    .register h2{
+        font-size: 32px;
+    }
+
+}
