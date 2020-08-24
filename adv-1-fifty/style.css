@@ -58,7 +58,7 @@ body {
       background-position: center;
 }
 
-@keyframes fadeIn{
+@-webkit-keyframes fadeIn{
     0%{
         opacity:0;
         transform:translateY(20px);
@@ -89,7 +89,7 @@ body {
     overflow: hidden;
 }
 
-@keyframes moveLeft {
+@-webkit-keyframes moveLeft {
     0%{
         transform: translateX(0);
     }
@@ -105,14 +105,23 @@ body {
     display: block;
     /* position: relative; */
     position: fixed;
-    animation: moveLeft 400s infinite;
+    -webkit-animation: moveLeft 400s infinite;
     /* animation-direction: alternate; */
-    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
 }
 
 .mix-difference{
-    mix-blend-mode: difference;
+    color: #FFEECF;
+    text-shadow: #afa38e 3px 3px 5px;
 }
+
+.mix-difference2{
+    color: #FFEECF;
+}
+
+/* .mix-difference{
+    mix-blend-mode: difference;
+} */
 
 .day{
     position: relative;
