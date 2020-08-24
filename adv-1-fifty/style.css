@@ -58,7 +58,7 @@ body {
       background-position: center;
 }
 
-@-webkit-keyframes fadeIn{
+@keyframes fadeIn{
     0%{
         opacity:0;
         transform:translateY(20px);
@@ -89,7 +89,7 @@ body {
     overflow: hidden;
 }
 
-@-webkit-keyframes moveLeft {
+@keyframes moveLeft {
     0%{
         transform: translateX(0);
     }
@@ -105,9 +105,9 @@ body {
     display: block;
     /* position: relative; */
     position: fixed;
-    -webkit-animation: moveLeft 400s infinite;
+    animation: moveLeft 400s infinite;
     /* animation-direction: alternate; */
-    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
 .mix-difference{
